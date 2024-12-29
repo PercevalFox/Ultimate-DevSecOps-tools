@@ -15,7 +15,7 @@ case $choice in
     ;;
   2)
     # Stack ELK (Web - Elasticsearch et Kibana)
-    cd elk-stack/
+    cd /opt/elk-stack
     docker-compose up -d
     echo "Elasticsearch est accessible à l'adresse suivante : http://$(hostname -I | awk '{print $1}'):9200"
     echo "Kibana est accessible à l'adresse suivante : http://$(hostname -I | awk '{print $1}'):5601"
